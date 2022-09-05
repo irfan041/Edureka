@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context = "http://www.springframework.org/schema/context"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+   
+
+        <bean id="account1" class="com.beans.Account">
+        <property name="accnum" value="888"/>
+        <property name="acctype" value="current"/>
+        <property name="accbrachname" value="Bangalore"/>
+        
+        </bean>
+        <bean id="account2" class="com.beans.Account">
+        <property name="accnum" value="77668899"/>
+        <property name="acctype" value="current"/>
+        <property name="accbrachname" value="srnager"/>
+        
+        </bean>
+        
+        <bean id="empbean" class="com.beans.Employee">
+        <property name="eid" value="100"/>
+        <property name="ename" value="ramesh"/>
+        <property name="eemail" value="ramesh@gmail.com"/>
+        <property name="acc">
+        <ref bean="account2"></ref>
+        </property>
+        
+        </bean> 
+        </beans>
