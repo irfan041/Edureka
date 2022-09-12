@@ -13,6 +13,7 @@ public class Employee {
 	
 	
 	private String name;
+	private String address;
 
 	public Employee() {
 		super();
@@ -23,6 +24,14 @@ public class Employee {
 		super();
 		this.id = id;
 		this.name = name;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
 	}
 
 	public int getId() {

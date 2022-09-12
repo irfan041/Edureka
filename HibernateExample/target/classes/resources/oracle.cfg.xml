@@ -9,11 +9,13 @@
 		<property name="connection.password">root</property>
 		<property name="connection.pool_size">10</property>
 		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
-		<property name="hbm2ddl.auto">create</property>
+		<property name="hbm2ddl.auto">update</property>
 		<property name="show_sql">true</property>
 		<property name="format_sql">true</property>
 		
 		 <mapping class="beans.Employee" />
+		 <mapping class="beans.NewStudent" />
+		  <mapping class="beans.OldStudent" />
 	
 	</session-factory>
 </hibernate-configuration>
